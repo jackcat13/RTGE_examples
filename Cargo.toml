@@ -1,0 +1,15 @@
+[package]
+name = "rtge_examples"
+version = "0.1.0"
+edition = "2021"
+
+[[bin]]
+name = "print_sprite"
+
+[[bin]]
+name = "print_centered_on_sprite"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+rtge = "0.1.1"
