@@ -27,8 +27,9 @@ fn main() {
             right: false,
         },
         speed: 2,
+        animation_name: None,
     };
-    let others = vec![Entity {
+    let mut others = vec![Entity {
         name: "enemy".to_string(),
         sprite: load_sprite("./src/bin/print_sprite/sprites/bob.json".to_string()),
         position: Position {
@@ -42,12 +43,11 @@ fn main() {
             right: false,
         },
         speed: 1,
+        animation_name: None,
     }];
 
-    for i in 1..100 {
-        let bob_async = bob.clone();
-        let others_async = others.clone();
-        print_sprites_centered_on(&bob_async, &others_async);
+    for _ in 1..100 {
+        print_sprites_centered_on(&mut bob, &mut others);
 
         bob.position.x += 1;
 

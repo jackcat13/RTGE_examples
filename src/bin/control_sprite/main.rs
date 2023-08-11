@@ -42,6 +42,7 @@ async fn game() -> io::Result<()> {
             right: false,
         },
         speed: 2,
+        animation_name: None,
     };
     let mut enemies = vec![Entity {
         name: "enemy".to_string(),
@@ -57,12 +58,11 @@ async fn game() -> io::Result<()> {
             right: false,
         },
         speed: 1,
+        animation_name: None,
     }];
 
     loop {
-        let bob_async = bob.clone();
-        let enemies_async = enemies.clone();
-        print_sprites_centered_on(&bob_async, &enemies_async);
+        print_sprites_centered_on(&mut bob, &mut enemies);
 
         //Relies on crossterm crate event-stream feature
         let inputs_rules = |event: Event| -> Result<(), String> {

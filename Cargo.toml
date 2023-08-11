@@ -13,5 +13,5 @@ name = "print_centered_on_sprite"
 
 [dependencies]
 crossterm = { version = "0.27.0", features = ["event-stream"] }
-rtge = "0.1.1"
+rtge = "0.2.0"
 tokio = "1.29.1"

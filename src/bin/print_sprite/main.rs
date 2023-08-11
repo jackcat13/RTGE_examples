@@ -19,9 +19,10 @@ fn main() {
             right: false,
         },
         speed: 2,
+        animation_name: None,
     };
     let mut another_bob = bob.clone();
     another_bob.position.x = 100;
-    let entities = vec![bob, another_bob];
-    print_sprites(&entities);
+    let mut entities = vec![bob, another_bob];
+    print_sprites(&mut entities);
 }

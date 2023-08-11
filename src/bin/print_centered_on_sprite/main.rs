@@ -11,7 +11,7 @@ const TERM_SIZE_X: u16 = 1000;
 const TERM_SIZE_Y: u16 = 1000;
 
 fn main() {
-    let bob = Entity {
+    let mut bob = Entity {
         name: "bob".to_string(),
         sprite: load_sprite("./src/bin/print_sprite/sprites/bob.json".to_string()),
         position: Position {
@@ -25,8 +25,9 @@ fn main() {
             right: false,
         },
         speed: 2,
+        animation_name: None,
     };
-    let others = vec![Entity {
+    let mut others = vec![Entity {
         name: "enemy".to_string(),
         sprite: load_sprite("./src/bin/print_sprite/sprites/bob.json".to_string()),
         position: Position {
@@ -40,6 +41,7 @@ fn main() {
             right: false,
         },
         speed: 1,
+        animation_name: None,
     }];
-    print_sprites_centered_on(&bob, &others);
+    print_sprites_centered_on(&mut bob, &mut others);
 }
