@@ -10,7 +10,7 @@ use rtge::{
 fn main() {
     let bob = Entity {
         name: "bob".to_string(),
-        sprite: load_sprite("./src/bin/print_sprite/sprites/bob.json".to_string()),
+        sprite: load_sprite("./src/bin/sprites/bob.json".to_string()),
         position: Position { x: 10, y: 10 },
         direction: Direction {
             up: false,

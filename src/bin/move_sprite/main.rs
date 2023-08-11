@@ -15,7 +15,7 @@ const TERM_SIZE_Y: u16 = 1000;
 fn main() {
     let mut bob = Entity {
         name: "bob".to_string(),
-        sprite: load_sprite("./src/bin/print_sprite/sprites/bob.json".to_string()),
+        sprite: load_sprite("./src/bin/sprites/bob.json".to_string()),
         position: Position {
             x: TERM_SIZE_X / 2,
             y: TERM_SIZE_Y / 2,
@@ -31,7 +31,7 @@ fn main() {
     };
     let mut others = vec![Entity {
         name: "enemy".to_string(),
-        sprite: load_sprite("./src/bin/print_sprite/sprites/bob.json".to_string()),
+        sprite: load_sprite("./src/bin/sprites/bob.json".to_string()),
         position: Position {
             x: (TERM_SIZE_X / 2) + 20,
             y: (TERM_SIZE_Y / 2) + 20,

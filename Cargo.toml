@@ -9,6 +9,15 @@ name = "print_sprite"
 [[bin]]
 name = "print_centered_on_sprite"
 
+[[bin]]
+name = "move_sprite"
+
+[[bin]]
+name = "control_sprite"
+
+[[bin]]
+name = "animated_sprite"
+
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
