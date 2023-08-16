@@ -471,9 +471,9 @@ dependencies = [
 
 [[package]]
 name = "rtge"
-version = "0.2.0"
+version = "0.3.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "251284187f40ec51bdbd5fceb2ba1176b61739ef145aea4ac61ec6edc4e25361"
+checksum = "140b1c64126876ec8baeb52285bcdec4f157e6539ac62c337f1728a692ca5e28"
 dependencies = [
  "crossterm",
  "futures",
@@ -651,9 +651,9 @@ dependencies = [
 
 [[package]]
 name = "tokio"
-version = "1.30.0"
+version = "1.31.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "2d3ce25f50619af8b0aec2eb23deebe84249e19e2ddd393a6e16e3300a6dadfd"
+checksum = "40de3a2ba249dcb097e01be5e67a5ff53cf250397715a071a81543e8a832a920"
 dependencies = [
  "backtrace",
  "bytes",
